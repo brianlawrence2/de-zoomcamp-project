@@ -1,4 +1,5 @@
 pandas==2.0.1
+pandas-gbq==0.19.1
 prefect==2.10.5
 prefect_gcp==0.4.1
 protobuf==4.22.3

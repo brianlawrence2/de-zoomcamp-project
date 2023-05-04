@@ -1,10 +1,8 @@
-FROM prefecthq/prefect:2.10.6-python3.11
+FROM prefecthq/prefect:latest-python3.10
 
 COPY requirements.txt .
 
+RUN python -m pip install --upgrade pip
 RUN pip install -r requirements.txt --trusted-host pypi.python.org --no-cache-dir
 
 COPY . /opt/prefect/flows
-
-#RUN ls
-#ENTRYPOINT [ "./entrypoint.sh" ]
